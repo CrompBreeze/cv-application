@@ -1,0 +1,7 @@
+.experience, #exp {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    align-items: center;
+}

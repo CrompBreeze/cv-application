@@ -1,0 +1,34 @@
+.viewergrid {
+    display: grid;
+    grid-template-areas: 
+    'ti ti'
+    'con exp'
+    'edu exp'
+    'ski exp';
+    grid-template-columns: 1fr 3fr;
+
+}
+
+
+.titleviewer {
+    text-align: center;
+    border: 2px solid black;
+    grid-area: ti;
+}
+.contactviewer {
+    padding-left: 40px;
+    border: 2px solid black;
+    grid-area: con;
+}
+.eduviewer {
+    border: 2px solid black;
+    grid-area: edu;
+}
+.expviewer {
+    border: 2px solid black;
+    grid-area: exp;
+}
+.skillsviewer {
+    border: 2px solid black;
+    grid-area: ski;
+}
