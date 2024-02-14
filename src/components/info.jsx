@@ -1,17 +1,26 @@
-
+import { useState } from 'react';
 import '../styles/info.css'
 
 export default function Info({ onclick })
 {
+    const [isOpen,setIsOpen] = useState(false);
+    function handleClick()
+    {
+        setIsOpen(!isOpen)
+    }
     return (
-        <div className="info">
-            <h1>Contact Details</h1>
+        <div className="info" style={{backgroundColor:isOpen ? 'bisque' : 'white'}}>
+            <p onClick={handleClick}>Contact Details</p>
+            {isOpen && 
+            <>
             <label>Name</label>
             <input onChange={onclick} id='name'/>
             <label>Email ID</label>
             <input onChange={onclick} id='mail'/>
             <label>Phone Number</label>
             <input onChange={onclick} id='phnumber'/>
+            </>
+            }
         </div>
     );
 
