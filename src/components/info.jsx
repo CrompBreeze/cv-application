@@ -9,7 +9,7 @@ export default function Info({ onclick })
         setIsOpen(!isOpen)
     }
     return (
-        <div className="info" style={{backgroundColor:isOpen ? 'bisque' : 'white'}}>
+        <div className="info" style={{backgroundColor:isOpen ? 'rgb(220,220,220)' : 'white'}}>
             <p onClick={handleClick}>Contact Details</p>
             {isOpen && 
             <>

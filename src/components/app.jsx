@@ -54,6 +54,7 @@ export default function App()
    return (
       <>
       <div className='editor'>
+        
         <Info onclick={updateInfo}/>
         <Education handleAdd={handleAddEdu} education={education} updateEdu={editEdu}/>
         <Skills handleSkill={addSkills} skills={skills} updateSkills={editSkills} />
